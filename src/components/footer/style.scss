@@ -1,0 +1,17 @@
+@import "../../mixins.scss";
+
+.footer {
+  width: 100%;
+  &-content {
+    padding: 30px 129px;
+    border-top: 1px solid #dedede;
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @include xl {
+      padding: 30px 50px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../mixins.scss";
+
+.home {
+  margin-left: 150px;
+  width: 100%;
+  @include md {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  &-logo {
+    img {
+      width: 310px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  &-content {
+    max-width: 1510px;
+    margin: 0 129px;
+    background-color: var(--grey-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 38px 129px;
+    h3 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 18px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    @include xl {
+      margin: 0 50px;
+      padding: 40px;
+
+      align-items: flex-start;
+      span {
+        text-align: left;
+      }
+    }
+  }
+}
